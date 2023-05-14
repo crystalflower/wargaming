@@ -1,4 +1,4 @@
-from pages import WebsitesProgrammingLanguagesPage
+from task_with_pytest.pages import WebsitesProgrammingLanguagesPage
 import pytest
 
 websites_programming_languages_data = None

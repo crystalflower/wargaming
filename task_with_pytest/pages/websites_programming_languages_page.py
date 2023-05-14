@@ -1,10 +1,10 @@
 from typing import List
 
-import settings
-from builtin_types.datacontainers import WebsiteProgrammingLanguages
-from locators import WebsitesProgrammingLanguagesLocators
-from pages.base import BasePage
-from utils import reformat_header, clear_data_from_links, num_from_fstring
+from task_with_pytest import settings
+from task_with_pytest.builtin_types.datacontainers import WebsiteProgrammingLanguages
+from task_with_pytest.locators import WebsitesProgrammingLanguagesLocators
+from task_with_pytest.pages.base import BasePage
+from task_with_pytest.utils import reformat_header, clear_data_from_links, num_from_fstring
 
 
 class WebsitesProgrammingLanguagesPage(BasePage):
