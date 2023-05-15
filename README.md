@@ -41,28 +41,42 @@ sudo chmod +x /usr/local/bin/chromedriver
 
 - Создать и активировать виртуальное окружение
 
-Ввести в терминал следующую команду, если не установлен соответствующий пакет для ubuntu:
-``` 
-sudo apt install python3-venv
-```
-Открыть корневую папку проекта и ввести в терминал:
-```
-python3 -m venv имя_окружения
-```
-Далее для ubuntu и macOS:
-```
-source имя_окружения/bin/activate
-```
-Или для windows:
-```
-C:\> имя_окружения\Scripts\activate.bat
-```
-- Установить зависимости из файла requirements.txt
+1. Ввести в терминал следующую команду, если не установлен соответствующий пакет для ubuntu:
+   ``` 
+   sudo apt install python3-venv
+   ```
+2. Открыть корневую папку проекта и ввести в терминал:
 
-Ввести в терминал:
-```
-pip install -r requirements.txt
-```
+   Для ubuntu, macOS
+   ```
+   python3 -m venv имя_окружения
+   ```
+   Для windows
+   ```
+   python -m venv имя_окружения
+   ```
+   
+3. Активировать виртуальное окружение:
+
+   Для ubuntu и macOS
+
+   ```
+   source имя_окружения/bin/activate
+   ```
+   Для windows
+   ```
+   имя_окружения\Scripts\activate.bat
+   ```
+4. Установить зависимости из файла requirements.txt
+
+   Ввести в терминал:
+   ```
+   pip install -r requirements.txt
+   ```
+
+При возникновении ошибок с активацией виртуальной среды попробовать пересоздать виртуальную среду
+
+При возникновении ошибок с установкой зависимостей попробовать обновить менеджер пакетов pip
 
 1. Задание с pytest:
 
@@ -90,11 +104,17 @@ pip install -r requirements.txt
 
 3. Задание с алгоритмами:
    - Открыть директорию `task_with_algorithms/`
-   - Запустить файл `search_the_shortest_path.py` на исполнение с помощью python3
+   ```
+    cd task_with_algorithms/
+    ```
+   - Запустить файл `search_the_shortest_path.py` на исполнение с помощью python3 для ubuntu, macOS:
 
     ```
-    cd task_with_algorithms/
     python3 search_the_shortest_path.py
+    ```
+   с помощью python для windows:
+    ```
+    python search_the_shortest_path.py
     ```
 
     Или
