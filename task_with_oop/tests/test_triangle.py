@@ -4,6 +4,7 @@ from task_with_oop.shapes import TriangleShape
 
 
 class TestTriangle:
+    # Проверяются треугольники разных типов: равнобедреный, общий, прямоугольный
     @pytest.mark.parametrize(
         'first_x, first_y, second_x, second_y, third_x, third_y',
         [

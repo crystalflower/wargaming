@@ -16,6 +16,8 @@ class TestEngine:
 
         captured = capsys.readouterr()
 
+        # Проверяем наличие фигуры в выводе, возможна реализация отслеживания предыдущего
+        # вывода через shapshot с помощью дополнительного пакета pytest-snapshot
         assert 'Circle' in captured.out, 'The circle was not drawn'
         assert 'Triangle' in captured.out, 'The triangle was not drawn'
         assert 'Rectangle' in captured.out, 'The rectangle was not drawn'

@@ -17,6 +17,8 @@ class RectangleShape(BaseShape):
         if not is_first_x_int or not is_first_y_int or not is_second_x_int or not is_second_y_int:
             raise TypeError('Invalid data type')
 
+        # Для отрисовки необходимы противоположные углы, повернутый прямоугольник не учитывается,
+        # поэтому положение точек на одной из осей недопустимо
         assert first_x != second_x and first_y != second_y, 'Coordinates cannot lie on the same axis'
 
         super().__init__(first_x, first_y)
